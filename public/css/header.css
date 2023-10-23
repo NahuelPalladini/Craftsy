@@ -3,8 +3,21 @@ header {
     padding: 20px;
 }
 
+header section {
+    display: flex;
+    justify-content: space-between;
+}
+
+header section a {
+    border: 1px solid #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
 header nav {
     margin-top: 20px;
+    display: none; /* Desaparece */ 
 }
 
 header nav ul {

@@ -1,0 +1,74 @@
+/* MOBILE */
+
+/* Seccion Products */
+.home__main__seccion {
+    width: 100%;
+    padding: 20px;
+}
+
+.home__main__seccion__article {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.home__main__seccion__article img {
+    width: 100%;
+}
+
+.home__main__seccion__article h4 {
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.home__main__seccion__article p {
+    line-height: 1.3rem;
+}
+
+/* Tutoriales */
+
+.home__main__aside{
+    width: 100%;
+    padding: 20px;
+}
+
+.home__main__aside h2 {
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: 900;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+}
+
+.home__main__aside--seccion{
+    margin-bottom: 20px;
+}
+
+.home__main__aside--seccion--article{
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-bottom: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaciado entre elementos */
+}
+
+.home__main__aside--seccion--article:last-child{
+    border-bottom: 1px solid silver;
+} /* Last-child = El ultimo elemento entre el grupo de hermanos */
+
+
+
+
+.home__main__aside--seccion--publicidad {
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+}
+
+.home__main__aside--seccion--publicidad img {
+    width: 100%;
+}
