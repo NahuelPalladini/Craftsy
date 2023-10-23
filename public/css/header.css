@@ -1,3 +1,5 @@
+/* MOBILE */
+
 header {
     background-color: #ff4500; /* Orange Red */
     padding: 20px;
@@ -16,8 +18,8 @@ header section a {
 }
 
 header nav {
-    margin-top: 20px;
-    display: none; /* Desaparece */ 
+    /* margin-top: 20px; */
+    display: none; /* Desaparece */
 }
 
 header nav ul {
@@ -30,4 +32,31 @@ header nav ul li {
 
 header nav ul li a {
     text-transform: uppercase; /* Mayuscula */
+}
+
+
+/* TABLET */
+
+@media (min-width:768px) {
+    
+    header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    header section a {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between; /* Izq y derecha al top */
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 10px;
+    }
 }
