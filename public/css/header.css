@@ -1,0 +1,20 @@
+header {
+    background-color: #ff4500; /* Orange Red */
+    padding: 20px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    margin-top: 10px;
+}
+
+header nav ul li {
+    padding: 2px;
+}
+
+header nav ul li a {
+    text-transform: uppercase; /* Mayuscula */
+}

@@ -1,0 +1,23 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Lo que pasa dentro de la casa queda dentro de la casa */
+ }
+
+
+li {
+    list-style: none; /* Borra viñetas */
+}
+
+a {
+    text-decoration: none; /* Saca Subrayado */
+    color: #ffffff; /* 6F es Blanco */
+}
+
+body {
+    font-family: 'lato';
+    max-width: 1140px; /* No va a crecer más que tanta cantidad de px */
+    margin: 0 auto;
+    background-image: url('/img/bg-2.png');
+    
+}
