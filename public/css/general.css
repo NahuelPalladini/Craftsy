@@ -1,9 +1,8 @@
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Lo que pasa dentro de la casa queda dentro de la casa */
- }
-
+   } 
 
 li {
     list-style: none; /* Borra viñetas */

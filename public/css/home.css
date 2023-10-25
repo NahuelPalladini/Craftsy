@@ -40,7 +40,7 @@
     margin-bottom: 20px;
 }
 
-.home__main__aside--seccion{
+.home__main__aside--seccion--tutoriales{
     margin-bottom: 20px;
 }
 
@@ -52,6 +52,7 @@
     display: flex;
     align-items: center;
     gap: 10px; /* espaciado entre elementos */
+    width: 100%;
 }
 
 .home__main__aside--seccion--article:last-child{
@@ -71,4 +72,27 @@
 
 .home__main__aside--seccion--publicidad img {
     width: 100%;
+}
+
+@media (min-width: 768px){
+    .home__main__seccion {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .home__main__seccion__article {
+        width: 50%;
+    }
+
+    .home__main__aside--seccion--tutoriales{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       row-gap: 14px;
+    }
+
+    .home__main__aside--seccion--article{
+        width: 49%;
+        border-bottom: 1px solid silver;
+    }
 }
