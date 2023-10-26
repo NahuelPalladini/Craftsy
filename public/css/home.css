@@ -42,12 +42,14 @@
 
 .home__main__aside--seccion--tutoriales{
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 14px;
 }
 
 .home__main__aside--seccion--article{
     background-color: #ffffff;
     border: 1px solid silver;
-    border-bottom: none;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -55,13 +57,11 @@
     width: 100%;
 }
 
-.home__main__aside--seccion--article:last-child{
+/* .home__main__aside--seccion--article:last-child{
     border-bottom: 1px solid silver;
 } /* Last-child = El ultimo elemento entre el grupo de hermanos */
 
-
-
-
+ 
 .home__main__aside--seccion--publicidad {
     padding: 10px;
     background-color: #ffffff;
@@ -85,14 +85,45 @@
     }
 
     .home__main__aside--seccion--tutoriales{
-       display: flex;
-       flex-wrap: wrap;
+       
        justify-content: space-between;
-       row-gap: 14px;
+       /* row-gap: 14px; */
     }
 
     .home__main__aside--seccion--article{
         width: 49%;
         border-bottom: 1px solid silver;
+    }
+
+    .home__main__aside--seccion--publicidad{
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 1140px) {
+    .home__main{
+        display: flex;
+        flex-wrap: wrap; /* Respete el ancho de sus hijos */
+    }
+
+    .home__main__seccion {
+        width: 70%;
+     }
+
+     .home__main__aside{
+        width: 30%;
+    }
+
+    .home__main__aside--seccion--tutoriales{
+       flex-direction: column;
+
+    }
+    
+    .home__main__aside--seccion--article{
+        width: 100%;
+    }
+
+    .home__main__aside--seccion--publicidad{
+        flex-direction: column;
     }
 }
