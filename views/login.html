@@ -12,9 +12,9 @@
   </head>
   <body class="login">
     <header>
-      <section class="header__logo">
-        <img src="/img/logo.png" alt="logo" />
-        <a href=""><i class="fa-solid fa-bars"></i></a>
+      <section>
+        <img class="header__section--link-home" src="/img/logo.png" alt="logo" />
+        <a class="header__section--button-nav" href=""><i class="fa-solid fa-bars"></i></a>
       </section>
       <nav>
         <ul>
@@ -29,7 +29,31 @@
       </nav>
     </header>
     <main class="login__main">
-      
+      <section class="box__card">
+        <form action="" class="form">
+            <div class="form__box">
+              <label class="form__label" for="email">email</label>
+              <input class="form__input" id="name" type="email" placeholder="correo@correo.com" name="email">
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="password">contraseña</label>
+            <div class="form__box--position"> <span><i class="fa-solid fa-eye"></i></span>
+            <input class="form__input" id="password" type="password" placeholder="Contraseña" name="password">
+          </div>
+        </div>
+        <div class="form__box">
+          <p >¿No estás registrado? <a class="link" href="/register"> Registrate</a></p>
+        </div>
+        <div class="form__box">
+           <input type="checkbox" id="remember" name="remember">
+           <label for="remember">Recordame</label>
+        </div>
+      <div class="box__end">
+        <a href="/" class="button__secondary" >cancelar</a>
+        <button class="button button__primary" type="submit">Enviar</button>
+      </div>
+        </form>
+          </section>
     </main>
   </body>
 </html>
