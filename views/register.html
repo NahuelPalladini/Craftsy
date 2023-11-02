@@ -32,13 +32,29 @@
       <section class="register__main__section">
     <form action="" class="form">
         <div class="form__box">
-            <label class="form__label" for="">Nombre</label>
-            <input class="form__input" type="text" placeholder="Escribi Tu Nombre">
+            <label class="form__label" for="name">Nombre</label>
+            <input class="form__input" id="name" type="text" placeholder="Escribi Tu Nombre" name="name">
         </div>
         <div class="form__box">
-            <label class="form__label" for="">Apellido</label>
-            <input class="form__input" type="text" placeholder="Escribi Tu Apellido">
+            <label class="form__label" for="surname">Apellido</label>
+            <input class="form__input" id="surname" type="text" placeholder="Escribi Tu Apellido" name="surname">
         </div>
+        <div class="form__box">
+          <label class="form__label" for="email">email</label>
+          <input class="form__input" id="name" type="email" placeholder="correo@correo.com" name="email">
+      </div>
+      <div class="form__box">
+        <label class="form__label" for="password">contraseña</label>
+        <input class="form__input" id="password" type="password" placeholder="Nueva Contraseña" name="password">
+    </div>
+    <div class="form__box">
+      <label class="form__label" for="password2">Confirma contraseña</label>
+      <input class="form__input" id="password2" type="password" placeholder="Confirma Contraseña" name="password2">
+  </div>
+  <div class="box__end">
+    <button class="button button__secondary" type="reset">Limpiar</button>
+    <button class="button button__primary" type="submit">Enviar</button>
+  </div>
     </form>
       </section>
     </main>
