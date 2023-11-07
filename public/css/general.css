@@ -19,6 +19,10 @@ a {
     color: #ffffff; /* 6F es Blanco */
 }
 
+textarea {
+    resize: none;
+}
+
 body {
     font-family: 'lato';
     max-width: 1140px; /* No va a crecer más que tanta cantidad de px */
@@ -44,6 +48,14 @@ body {
     border-radius: 5px;
 }
 
+.box__card--simple {
+   max-width: 320px;
+}
+
+.box__card--double {
+    max-width: 1024px;
+ }
+
 .box__card--title {
     margin-bottom: 30px;
     text-align: end;
@@ -52,4 +64,8 @@ body {
 .link {
     color: var(--coloRojo);
     
+}
+
+@media (min-width: 768px) {
+
 }

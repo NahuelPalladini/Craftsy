@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="register">
+  <body class="profile">
     <header>
       <section class="header__logo">
         <img src="/img/logo.png" alt="logo" />
@@ -28,41 +28,105 @@
         </ul>
       </nav>
     </header>
-    <main class="register__main">
+    <main class="profile__main">
       <section class="box__card">
         <div class="box__card--title">
-            <h4 >PERFIL DE URUARIO</h4>
+            <h4 >PERFIL DE USUARIO</h4>
             <hr>
           </div>
-    <form action="" class="form">
-        <div class="form__box">
-            <label class="form__label" for="name">Nombre</label>
-            <input class="form__input" id="name" type="text" placeholder="Escribi Tu Nombre" name="name">
-        </div>
-        <div class="form__box">
+          <form action="" class="form">
+            <div class="form__box--col50">
+              <label class="form__label" for="name">Nombre</label>
+              <input class="form__input" id="name" type="text" value="Nahuel" name="name">
+          </div>
+          <div class="form__box--col50">
             <label class="form__label" for="surname">Apellido</label>
-            <input class="form__input" id="surname" type="text" placeholder="Escribi Tu Apellido" name="surname">
+            <input class="form__input" id="surname" type="text" value="Palladini" name="surname">
         </div>
-        <div class="form__box">
-          <label class="form__label" for="email">email</label>
-          <input class="form__input" id="name" type="email" placeholder="correo@correo.com" name="email">
+        <div class="form__box--col50">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" id="email" type="email" readonly value="nahuelP@gmail.com" name="email">
       </div>
-      <div class="form__box">
-        <label class="form__label" for="password">contraseña</label>
-        <input class="form__input" id="password" type="password" placeholder="Nueva Contraseña" name="password">
+      <div class="form__box--col50">
+        <label class="form__label" for="address">Domicilio</label>
+        <input class="form__input" id="address" type="text" value="" name="address" placeholder="Calle y altura">
     </div>
-    <div class="form__box">
-      <label class="form__label" for="password2">Confirma contraseña</label>
-      <input class="form__input" id="password2" type="password" placeholder="Confirma Contraseña" name="password2">
+    <div class="form__box--col50">
+      <label class="form__label" for="city">Ciudad</label>
+      <select class="form__input" name="city" id="city">
+          <option value="" selected hidden>
+              Seleccione...
+          </option>
+          <option value="san miguel">San Miguel</option>
+          <option value="lanus">Lanus</option>
+          <option value="loma hermosa">Loma Hermosa</option>
+          <option value="merlo">Merlo</option>
+          <option value="la plata">La Plata</option>
+          <option value="gral pinedo">General Pinedo</option>
+          <option value="quilmes">Quilmes</option>
+          <option value="cordoba">Córdoba</option>
+          <option value="san Nicolas">San Nicolas de los Arroyos</option>
+          <option value="la banda">La Banda</option>
+      </select>
   </div>
-  <div class="form__box">
-    <p >¿Ya estas registrado? <a class="link" href="/login">inicia sesión</a></p>
+  <div class="form__box--col50">
+    <label class="form__label" for="province">Provincia</label>
+    <select class="form__input" name="province" id="province">
+        <option value="" selected hidden>
+            Seleccione...
+        </option>
+        <option value="buenos aires">Buenos Aires</option>
+        <option value="chaco">Chaco</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="santiago">Santiago del Estero</option>
+    </select>
+</div>
+<div class="form__box--col50">
+  <h4 class="form__label">Género</h4>
+  <div class="form__box--col50">
+      <input type="radio" id="h" value="h" name="gender">
+      <label for="h">Hombre</label>
   </div>
-  <div class="box__end">
-    <button class="button button__secondary" type="reset">Limpiar</button>
-    <button class="button button__primary" type="submit">Enviar</button>
+  <div class="form__box--col50">
+      <input type="radio" id="m" value="m" name="gender">
+      <label for="m">Mujer</label>
   </div>
-    </form>
+</div>
+<div class="form__box--row form__box--col50">
+  <h4 class="form__label">Recibir información de:</h4>
+  <div class="form__box--col50">
+      <input type="checkbox" name="info" id="smartphone">
+      <label for="smartphone">Smartphone</label>
+  </div>
+  <div class="form__box--col50">
+    <input type="checkbox" name="info" id="tablet">
+    <label for="tablet">Tablet</label>
+</div>
+<div class="form__box--col50">
+  <input type="checkbox" name="info" id="notebook">
+  <label for="notebook">Notebook</label>
+</div>
+<div class="form__box--col50">
+  <input type="checkbox" name="info" id="smartwatch">
+  <label for="smartwatch">Smartwath</label>
+</div>
+</div>
+<div class="form__box--col50">
+  <label for="avatar" class="form__label">Imagen del perfil</label>
+  <input type="file" class="form__input" accept="image/*">
+</div>
+<div class="form__box--col50">
+  <label for="birthday">Fecha de nacimiento</label>
+  <input class="form__input" type="date" name="birthday" id="birthday">
+</div>
+<div class="form__box">
+  <label for="about">Acerca de mí...</label>
+  <textarea name="about" id="about" class="form__textarea" rows="8"></textarea>
+</div>
+<div class="box__end">
+  <button class="button button__secondary" type="reset">Limpiar</button>
+  <button class="button button__primary" type="submit">Enviar</button>
+</div>
       </section>
     </main>
   </body>
