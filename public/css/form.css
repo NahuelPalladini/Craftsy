@@ -57,7 +57,11 @@
 }
 
 @media (min-width:768px) {
+    .box__card {
+        width: 700px;
+    }
     .form__box--col50 {
-        width: 48%;
+        width: 50%;
+        padding: 5px;
     }
 }

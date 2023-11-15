@@ -39,7 +39,7 @@ body {
 }
 
 .box__card {
-    max-width: 320px;
+    /* max-width: 320px; */
     width: 90%;
     margin: 50px auto;
     padding: 20px;
