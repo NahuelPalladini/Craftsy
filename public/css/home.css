@@ -106,6 +106,10 @@
         flex-wrap: wrap; /* Respete el ancho de sus hijos */
     }
 
+    .swiper{
+        width: 100%;
+    }
+
     .home__main__seccion {
         width: 70%;
      }
@@ -125,5 +129,10 @@
 
     .home__main__aside--seccion--publicidad{
         flex-direction: column;
+    }
+
+    .home__main__section-sales{
+        width: 100%;
+        overflow: hidden;
     }
 }

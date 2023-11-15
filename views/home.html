@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Craftsy | Home</title>
+    <!-- Swipper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Custom Css -->
     <link rel="stylesheet" href="/css/style.css" />
     <script
       src="https://kit.fontawesome.com/d797b1fcfc.js"
@@ -29,6 +35,32 @@
       </nav>
     </header>
     <main class="home__main">
+      <!-- Slider main container -->
+      <div class="swiper mySwiper_1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide_1">
+                <img src="/img/banner/banner_1.jpg" alt="">
+            </div>
+            <div class="swiper-slide swiper-slide_1">
+                <img src="/img/banner/banner_2.jpg" alt="">
+            </div>
+            <div class="swiper-slide swiper-slide_1">
+                <img src="/img/banner/banner_3.png" alt="">
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-prev_1"></div>
+        <div class="swiper-button-next swiper-button-next_1"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
       <section class="home__main__seccion">
         <article class="home__main__seccion__article">
           <img src="/img/img-phone-01.jpg" alt="img-phone-01" />
@@ -105,6 +137,73 @@
           <img src="/img/ad-02.jpg" alt="ad-02" />
         </section>
       </aside>
+      <div class="home__main__section-sales">
+        <div class="swiper_2 mySwiper_2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide swiper-slide_2">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination_2"></div>
+        </div>
+    </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper_1 = new Swiper(".mySwiper_1", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next_1",
+          prevEl: ".swiper-button-prev_1",
+        },
+      });
+
+      const swiper_2 = new Swiper(".mySwiper_2", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
